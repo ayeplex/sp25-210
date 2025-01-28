@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <style>
+      /* Simple styling for the table */
+      table {
+        width: 80%; /* Table will take up 80% of the page width */
+        margin: 20px auto; /* Centers the table horizontally */
+        border-collapse: collapse; /* Makes borders look clean */
+      }
+
+      /* Table borders for the table, headings, and cells */
+      table,
+      th,
+      td {
+        border: 1px solid black; /* Makes a solid black border around the table */
+      }
+
+      /* Styling for the table headings */
+      th {
+        background-color: #f2f2f2; /* Light gray background for headers */
+        padding: 10px; /* Adds some space inside the headers */
+        text-align: left; /* Aligns text to the left */
+      }
+
+      /* Alternating row colors for easier reading */
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9; /* Light gray for every even row */
+      }
+
+      /* Image size and border around the images */
+      td img {
+        width: 100px; /* Makes the images 100px wide */
+        height: auto; /* Keeps the correct proportions of the image */
+        border: 2px solid #ddd; /* Adds a light border around the images */
+      }
+
+      /* Title (caption) for the table */
+      caption {
+        font-size: 1.5em; /* Makes the title bigger */
+        margin: 10px; /* Adds space around the title */
+      }
+
+      /* Copyright text at the bottom of the table */
+      .copyright {
+        text-align: center; /* Centers the text */
+        font-size: 0.9em; /* Smaller font size */
+        padding: 10px; /* Adds some space around the text */
+        background-color: #f2f2f2; /* Light gray background */
+        font-style: italic; /* Makes the text italic */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table to display the photo gallery -->
+    <table>
+      <!-- Title of the photo gallery -->
+      <caption>
+        NFL Players Gallery
+      </caption>
+
+      <!-- Table headers -->
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Date</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <!-- Table rows with images, dates, and descriptions -->
+      <tbody>
+        <!-- Row 1 -->
+        <tr>
+          <td>
+            <img
+              src="http://cdn.chatsports.com/thumbnails/1467-14983-original.jpeg"
+              alt="DK Metcalf football player"
+            />
+          </td>
+          <td>October 11, 2019</td>
+          <td>
+            DK Metcalf, wide receiver for the Seattle Seahawks, during a game.
+          </td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+          <td>
+            <img
+              src="https://www.thecoldwire.com/wp-content/uploads/2023/10/Justin-Jefferson-in-jersey-scaled.jpg"
+              alt="Justin Jefferson football player"
+            />
+          </td>
+          <td>June 10, 2024</td>
+          <td>
+            Justin Jefferson, wide receiver for the Minnesota Vikings, in his
+            jersey.
+          </td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+          <td>
+            <img
+              src="https://thefantasyfootballcounselor.com/wp-content/uploads/2022/02/chase-1.jpg"
+              alt="Ja'Marr Chase football player"
+            />
+          </td>
+          <td>February 16, 2022</td>
+          <td>
+            Ja'Marr Chase, wide receiver for the Cincinnati Bengals, celebrating
+            a touchdown.
+          </td>
+        </tr>
+
+        <!-- Last row for copyright -->
+        <tr>
+          <td colspan="3" class="copyright">
+            &copy; 2024 NFL Photography. All rights reserved.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
