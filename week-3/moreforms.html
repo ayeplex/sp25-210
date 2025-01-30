@@ -4,19 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 3</title>
+    <style>
+      fieldset {
+        border: 2px solid #000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      select,
+      input {
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="moreforms.html">More Forms</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moreforms.html">More Forms</a></li>
       </ul>
     </nav>
 
     <h1>More Forms</h1>
+
+    <form action="moreforms.html" method="post">
+      <div>
+        <input
+          type="checkbox"
+          name="soulContract"
+          id="soulContract"
+          checked
+          disabled
+        />
+        <label for="soulContract">Sign away your soul</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          name="lengthContract"
+          id="lengthContract1"
+          value="1year"
+        />
+        <label for="lengthContract1">1 year</label>
+        <input
+          type="radio"
+          name="lengthContract"
+          id="lengthContract2"
+          value="2years"
+        />
+        <label for="lengthContract2">2 years</label>
+        <input
+          type="radio"
+          name="lengthContract"
+          id="lengthContract50"
+          value="50years"
+          checked
+        />
+        <label for="lengthContract50">50 years</label>
+      </div>
+
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div>
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            list="f1Drivers"
+            required
+          />
+          <datalist id="f1Drivers">
+            <option value="Lewis Hamilton"></option>
+            <option value="Max Verstappen"></option>
+            <option value="Charles Leclerc"></option>
+            <option value="Lando Norris"></option>
+            <option value="Fernando Alonso"></option>
+            <option value="Carlos Sainz"></option>
+            <option value="Sergio Perez"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="necromancer">Necromancer:</label>
+          <select id="necromancer" name="necromancer">
+            <option value="Necromancer">Necromancer</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="submit" value="E-Sign" />
+      </div>
+    </form>
   </body>
 </html>
