@@ -1,0 +1,64 @@
+/* Flexbox Container */
+#flexbox {
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Box Styling */
+.box {
+    width: 300px;
+    min-height: 180px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aquamarine;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Grid Layout Section */
+#grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for large screens */
+    grid-gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Grid Box Styling */
+.grid-box {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    /* Black outline */
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Adjust layout for fewer boxes */
+#grid-layout {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+    #grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on smaller screens */
+    }
+}
