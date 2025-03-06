@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 8 - Pokemon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        background-color: #ff8c00;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #ffa500;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+      }
+
+      nav ul li a {
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      #journeyRef {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .pokemon {
+        margin: 10px;
+        display: inline-block;
+      }
+
+      .pokemon img {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pokemon.html">Window Methods</a></li>
+        <li><a href="objects.html">Complex Objects</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>WINDOW METHODS (POKEMON)</h1>
+      <button id="alertBtn">ALERT</button>
+      <button id="confirmBtn">CONFIRM</button>
+      <button id="promptBtn">PROMPT</button>
+
+      <div>
+        <button id="journeyBtn">Start journey</button>
+      </div>
+
+      <div id="journeyRef">
+        <!-- Directly placed Pokémon images and names -->
+        <div class="pokemon">
+          <h3>Bulbasaur</h3>
+          <img src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="Bulbasaur">
+        </div>
+        <div class="pokemon">
+          <h3>Charmander</h3>
+          <img src="https://img.pokemondb.net/artwork/charmander.jpg" alt="Charmander">
+        </div>
+        <div class="pokemon">
+          <h3>Squirtle</h3>
+          <img src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="Squirtle">
+        </div>
+      </div>
+    </main>
+
+    <script src="js/pokemon.js"></script>
+  </body>
+</html>
