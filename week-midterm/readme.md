@@ -3,3 +3,5 @@
 ### Live Link
 
 [Home](https://{your-github-username}.github.io/{your-repo-name}/midterm)
+
+https://{your-github-username}.github.io/{your-repo-name}/midterm
